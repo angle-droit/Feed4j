@@ -21,15 +21,7 @@ A high-performance, multi-threaded RSS feed parser library for Java that support
 
 ### Maven
 
-Add the following dependency to your `pom.xml`:
-
-```xml
-<dependency>
-    <groupId>com.axeldev</groupId>
-    <artifactId>feed4j</artifactId>
-    <version>1.0.0</version>
-</dependency>
-```
+Not implemented.
 
 ### Manual Installation
 
