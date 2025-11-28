@@ -1,2 +1,111 @@
+# Compiled class files
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+build/
+gradle-app.setting
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+.gradletasknamecache
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+.idea_modules/
+atlassian-ide-plugin.xml
+
+# Eclipse
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+bin/
+
+# NetBeans
+nb-configuration.xml
+nbactions.xml
+nbproject/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Application specific
 /feed4j.jar
-/target
+*.pid
+*.seed
+*.pid.lock
+
+# Test files
+test-output/
+surefire-reports/
+
+# Coverage reports
+coverage/
+*.exec
+cobertura.ser
+
+# Npm/Node artifacts
+node_modules/
+npm-debug.log*
+
+# Local configuration
+application-local.properties
+application-local.yml
+local.properties
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+*.h2.db
+
+# Backup files
+*.bak
+*.backup
+*.orig
+*.old
