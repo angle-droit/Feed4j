@@ -49,6 +49,18 @@ public class Feed4j {
         this.config = config;
         this.cache = new FeedCache(config.getCacheDurationMs());
         this.factory = DocumentBuilderFactory.newInstance();
+
+        // Security: Prevent XXE (XML External Entity) attacks
+        try {
+            this.factory.setFeature("http://xml.org/sax/features/external-general-entities", false);
+            this.factory.setFeature("http://xml.org/sax/features/external-parameter-entities", false);
+            this.factory.setFeature("http://apache.org/xml/features/nonvalidating/load-external-dtd", false);
+            this.factory.setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, true);
+        } catch (Exception e) {
+            // Features may not be supported on all implementations
+            System.err.println("Warning: Could not disable XXE features: " + e.getMessage());
+        }
+
         this.factory.setValidating(config.isValidateXml());
         if (config.isValidateXml()) {
             try {
