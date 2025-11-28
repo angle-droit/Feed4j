@@ -45,7 +45,9 @@ public class FeedCache {
      * Supprime un flux spécifique du cache
      */
     public void remove(String url) {
-        cache.remove(url);
+        if (url != null) {
+            cache.remove(url);
+        }
     }
 
     /**
