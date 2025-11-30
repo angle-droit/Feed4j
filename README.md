@@ -25,9 +25,8 @@ Not implemented.
 
 ### Manual Installation
 
-1. Clone the repository
-2. Build with Maven: `mvn clean install`
-3. Add the generated JAR to your classpath
+1. Download .jar in release
+2. Add the generated JAR to your classpath
 
 ## 🔧 Quick Start
 
